@@ -1,0 +1,177 @@
+body {
+  background: #1c1c1c;
+  font-family: sans-serif;
+  color: #666;
+  background-image: url("http://3.bp.blogspot.com/_B1LlYh6iKqs/TBCU_9lZytI/AAAAAAAABqQ/OcxG1DGg92M/s1600/jason-alexander.jpg");
+  background-repeat: repeat;
+  background-size: 24px;
+}
+
+/* Main Contents */
+#main {
+	padding: 5px;
+	width: 960px;
+	margin: 0 auto;
+  background: black;
+}
+header {
+	height: 100px;
+  text-align: center;
+  background-color: #2d2d2d;
+}
+h1 {
+  font-size: 32px;
+  margin-top: 33px;
+  color: white;
+}
+#seduction h2, #confidence h2, #power h2 {
+  text-align: center;
+}
+#seduction h2, #power h2 {
+  color: black;
+}
+#confidence h2 {
+  color: white;
+}
+#seduction {
+	width: 290px;
+  height: 300px;
+	float: left;
+	padding: 5px 15px;
+}
+#confidence {
+	width: 294px; /* Account for margins + border values */
+  height: 300px;
+	float: left;
+	padding: 5px 15px;
+	margin: 0px 5px 5px 5px;
+}
+#power {
+	width: 270px;
+  height: 300px;
+	padding: 5px 15px;
+	float: left;
+}
+footer {
+	clear: both;
+	padding: 0 15px;
+  text-align: center;
+}
+#seduction-pic, #confidence-pic, #power-pic {
+  width: 100%;
+}
+#main-nav {
+  padding: 5px;
+	float: left;
+	padding: 5px 15px;
+	margin: 0 auto;
+  background-color: #2d2d2d;
+}
+ul {
+  list-style-type: none;
+  text-align: center;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0;
+  width: 207px;
+  position: relative;
+  top: -2px;
+  border: 1px solid;
+  background-color: #2d2d2d;
+}
+li {
+  float: left;
+  border-left: 1px solid;
+}
+li a {
+  display: inline-block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: monospace;
+  font-weight: lighter;
+  font-size: 1rem;
+  color: white;
+}
+li a:hover {
+  background-color: #111;
+}
+
+/* 980px */
+@media screen and (max-width: 980px) {
+	#main {
+		width: 94%;
+	}
+  #main-nav {
+		width: 94%;
+	}
+	#seduction {
+		width: 41%;
+    height: 43%;
+		padding: 1% 4%;
+	}
+	#confidence {
+		width: 41%;
+    height: 43%;
+		padding: 1% 4%;
+		margin: 0px 0px 5px 5px;
+		float: right;
+	}
+	#power {
+		clear: both;
+		padding: 1% 4%;
+		width: auto;
+    height: 43%;
+		float: none;
+	}
+	header, footer {
+		padding: 1% 4%;
+	}
+}
+
+/* 700px */
+@media screen and (max-width: 600px) {
+	#seduction {
+		width: auto;
+    height: auto;
+		float: none;
+	}
+	#confidence {
+		width: auto;
+    height: auto;
+		float: none;
+		margin-left: 0px;
+	}
+	#power {
+		width: auto;
+    height: auto;
+		float: none;
+	}
+}
+
+/* 480px */
+@media screen and (max-width: 480px) {
+	header {
+		height: auto;
+	}
+	h1 {
+		font-size: 2em;
+	}
+	#power {
+		display: none;
+	}
+}
+
+
+#seduction {
+	background: #f8f8f8;
+}
+#power {
+	background: #f0efef;
+}
+header, #seduction, #confidence, #power {
+	margin-bottom: 5px;
+}
+header, #seduction, #confidence, #power, footer {
+	border: solid 1px #ccc;
+}

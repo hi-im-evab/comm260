@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- index.css messy, clean up -->
+<html>
+  <head>
+     <meta charset="utf-8">
+     <title>Evan Eggers</title>
+     <link href="css/index.css" rel="stylesheet" type="text/css">
+   </head>
+   <audio id="seinfeld" src="seinfeld.wav" type="audio/wav"></audio>
+   <script>
+    var i = 0;
+    function slapBass(){
+      if (i == 0){
+        var audio = document.getElementById("seinfeld");
+        audio.play();
+        i++;
+      }
+      else if (i == 1){
+        i--;
+        window.location.href = "costanza.html";
+      }
+    }
+   </script>
+   <style>
+    body {background-color: #1c1c1c;}
+   </style>
+  <body>
+    <main>
+      <!-- title -->
+      <header>
+        <a href="index.html">
+          <h1>Evan Eggers</h1>
+          <h2>Portfolio</h2>
+        </a>
+      </header>
+
+      <!-- links -->
+      <div class="main-nav">
+        <ul>
+          <li id="music-link"><a href="music.html">Music</a></li>
+          <li id="writing-link"><a href="writing.html">Writing</a></li>
+          <li id="coding-link"><a href="coding.html">Coding</a></li>
+        </ul>
+      </div>
+
+      <!-- pics and paragraph -->
+      <div class="center">
+        <!-- placeholder images -->
+        <!-- inline css done for demonstration-->
+        <img id="leftborder" src="img/regal-left.png"
+        style="width: 100px; height: 220px; display: block; margin: 0 auto;">
+        <img id="rightborder" src="img/regal-right.png"
+        style="width: 100px; height: 220px; display: block; margin: 0 auto;">
+
+        <!-- main paragraph -->
+        <p>Hi this is my portfolio. Here's some placeholder text that might do
+          some stuff later idk. Something really ought to go here but like
+          what. Maybe I'll talk about me or my work or just have
+          some lorem ipsum going on. Hi. Those pics are just placeholders; I'll
+          probably put something else there later. Please don't think less of me.
+        </p>
+      </div>
+
+      <!-- costanza -->
+      <div class="costanza">
+        <img alt="costanza" src="http://i1.kym-cdn.com/entries/icons/square/000/005/498/1300044776986.jpg"
+        onclick="slapBass()">
+        <a>Click</a>
+      </div>
+    </main>
+    
+    <footer>
+     <a href="http://www.twitter.com/nahviss">Twitter</a>
+     <a href="http://www.soundcloud.com/nahviss">Soundcloud</a>
+     <a href="http://nahviss.bandcamp.com/">Bandcamp</a>
+    </footer>
+  </body>
+</html>
